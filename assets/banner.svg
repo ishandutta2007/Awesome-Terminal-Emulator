@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
+  <defs>
+    <!-- Dark Gradient Background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+
+    <!-- Neon Glow Gradients -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(30, 41, 59, 0.7)"/>
+      <stop offset="100%" stop-color="rgba(15, 23, 42, 0.8)"/>
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      .title {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 52px;
+        font-weight: 900;
+        fill: #ffffff;
+        letter-spacing: 2px;
+      }
+      .subtitle {
+        font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        fill: #94a3b8;
+        letter-spacing: 1px;
+      }
+      .badge-text {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        font-weight: bold;
+        fill: #38bdf8;
+      }
+      
+      /* Animated Elements */
+      @keyframes pulseGlow {
+        0% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 0.6; transform: scale(1.05); }
+        100% { opacity: 0.3; transform: scale(1); }
+      }
+
+      @keyframes cursorBlink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+
+      @keyframes floatParticle {
+        0% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+        50% { transform: translateY(-15px) translateX(10px); opacity: 0.7; }
+        100% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+      }
+
+      .glow-orb-1 {
+        animation: pulseGlow 6s infinite ease-in-out;
+        transform-origin: 200px 100px;
+      }
+
+      .glow-orb-2 {
+        animation: pulseGlow 8s infinite ease-in-out 1s;
+        transform-origin: 1000px 260px;
+      }
+
+      .cursor {
+        animation: cursorBlink 1s infinite;
+      }
+
+      .particle {
+        animation: floatParticle 4s infinite ease-in-out;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Dynamic/Animated Background Glowing Orbs -->
+  <circle class="glow-orb-1" cx="200" cy="100" r="140" fill="#38bdf8" opacity="0.25" filter="url(#glow)"/>
+  <circle class="glow-orb-2" cx="1000" cy="260" r="160" fill="#818cf8" opacity="0.2" filter="url(#glow)"/>
+
+  <!-- Decorative Grid Overlay -->
+  <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200 M0 300 H1200" stroke="#1e293b" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+  <path d="M200 0 V360 M400 0 V360 M600 0 V360 M800 0 V360 M1000 0 V360" stroke="#1e293b" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+
+  <!-- Floating Decorative Dynamic Code Cards (Background Layered) -->
+  <g opacity="0.35" class="particle">
+    <rect x="860" y="50" width="280" height="120" rx="10" fill="url(#cardGrad)" stroke="#475569" stroke-width="1"/>
+    <circle cx="880" cy="70" r="5" fill="#ef4444"/>
+    <circle cx="895" cy="70" r="5" fill="#eab308"/>
+    <circle cx="910" cy="70" r="5" fill="#22c55e"/>
+    <text x="880" y="105" font-family="monospace" font-size="13" fill="#a855f7">$ alacritty --vga</text>
+    <text x="880" y="130" font-family="monospace" font-size="13" fill="#22c55e">✓ GPU Accel Active</text>
+  </g>
+
+  <g opacity="0.3" class="particle" style="animation-delay: 2s;">
+    <rect x="60" y="210" width="260" height="100" rx="10" fill="url(#cardGrad)" stroke="#475569" stroke-width="1"/>
+    <circle cx="80" cy="230" r="5" fill="#ef4444"/>
+    <circle cx="95" cy="230" r="5" fill="#eab308"/>
+    <circle cx="110" cy="230" r="5" fill="#22c55e"/>
+    <text x="80" y="265" font-family="monospace" font-size="13" fill="#38bdf8">$ tmux new -s dev</text>
+    <text x="80" y="290" font-family="monospace" font-size="13" fill="#64748b">[3 windows attached]</text>
+  </g>
+
+  <!-- Foreground Content (Guaranteed High Contrast & Visible) -->
+  <!-- Top Tag / Pill -->
+  <rect x="75" y="55" width="250" height="32" rx="16" fill="rgba(56, 189, 248, 0.1)" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="95" y="76" class="badge-text">⚡ AWESOME LIST 2026</text>
+
+  <!-- Main Title -->
+  <text x="75" y="145" class="title">
+    Awesome <tspan fill="url(#accentGrad)">Terminal Emulators</tspan>
+  </text>
+
+  <!-- Subtitle -->
+  <text x="75" y="190" class="subtitle">
+    Curated GPU-Accelerated Terminals, Multiplexers &amp; Cross-Platform CLI Ecosystem
+  </text>
+
+  <!-- Animated Terminal Command Prompt in Foreground -->
+  <rect x="75" y="225" width="720" height="56" rx="12" fill="#090d16" stroke="#334155" stroke-width="1.5"/>
+  <text x="95" y="260" font-family="monospace" font-size="18" fill="#22c55e">❯</text>
+  <text x="120" y="260" font-family="monospace" font-size="17" fill="#f8fafc">git clone ishandutta2007/Awesome-Terminal-Emulator</text>
+  <rect class="cursor" x="655" y="243" width="10" height="20" fill="#38bdf8"/>
+
+  <!-- Footer Accent Line -->
+  <rect x="0" y="354" width="1200" height="6" fill="url(#accentGrad)"/>
+</svg>

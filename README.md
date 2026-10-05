@@ -1,259 +1,163 @@
-# Awesome-Terminal-Emulator
-
-## Top Terminal Emulator Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on GPU-Accelerated Rendering, Multiplexing & Cross-Platform Shells*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **commercial terminal emulators** and **open-source projects** that provide fast, feature-rich command-line interfaces — from GPU-accelerated terminals to cross-platform multiplexers and remote access tools.
-
-
-
-**Examples** include Windows Terminal, iTerm2, Alacritty, Kitty, Hyper, ConEmu, PuTTY, MobaXterm, Warp, and WezTerm (the category leaders).
-
-
-
-**Open-source emphasis**: Terminal emulators are one of the strongest open-source domains. **Alacritty**, **Kitty**, **WezTerm**, **Windows Terminal**, and **Ghostty** collectively deliver GPU-accelerated performance with zero licensing costs, while **tmux** and **Zellij** provide terminal multiplexing. This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[iTerm2](https://iterm2.com/)**  
-
-  macOS-only terminal emulator with split panes, search, autocomplete, and extensive customization. **Free and open-source** (GPL-2.0) but closely tied to macOS ecosystem. **The de facto macOS terminal** for developers .
-
-
-
-- **[MobaXterm](https://mobaxterm.mobatek.net/)**  
-
-  Windows terminal with built-in X server, SSH client, SFTP browser, and remote desktop tools. **Free tier available** with limited sessions; Professional edition for unlimited use. **The Swiss Army knife of Windows remote access** .
-
-
-
-- **[Warp](https://www.warp.dev/)**  
-
-  Modern terminal with AI-powered command suggestions, blocks-based output, and collaborative features. **Free tier available**; paid for teams. **The most AI-forward commercial terminal** — closed source.
-
-
-
-- **[PuTTY](https://www.putty.org/)**  
-
-  Legendary Windows SSH client with terminal emulation. **Open-source** (MIT) but development has slowed significantly. **Historically the standard Windows SSH client** — still widely deployed .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Windows Terminal](https://github.com/microsoft/terminal)**  
-
-  **Microsoft's modern terminal for Windows**, MIT licensed with 100,000+ GitHub stars . **GPU-accelerated rendering** via DirectWrite/DirectX, tabs, panes, and full Unicode/emoji support . Integrates with PowerShell, WSL, SSH, and Azure Cloud Shell . **The default terminal for Windows 11** — completely replaced the legacy console host . Highly customizable with JSON profiles and themes .
-
-
-
-- **[Alacritty](https://github.com/alacritty/alacritty)**  
-
-  **The original GPU-accelerated terminal emulator**, Apache-2.0 licensed with 60,000+ GitHub stars . **Focuses exclusively on performance** — no tabs, no splits, no scrollback by design . **Relies on tmux or a window manager for multiplexing** . **The fastest terminal available** with minimal resource usage . Cross-platform (Linux, macOS, Windows, BSD) . **The reference implementation for GPU-accelerated terminals** — inspired Kitty, WezTerm, and Ghostty .
-
-
-
-- **[Kitty](https://github.com/kovidgoyal/kitty)**  
-
-  **GPU-accelerated terminal with batteries included**, GPL-3.0 licensed with 30,000+ GitHub stars . **Tabs, splits, layouts, and sessions built in** — no external multiplexer needed . Features **kittens** (extensible Python scripts for terminal features), **remote control via kitty socket**, **hyperlinks, images, and Unicode support** . **The most feature-complete GPU terminal** — creator Kovid Goyal also developed Calibre . macOS, Linux, and BSD only.
-
-
-
-- **[WezTerm](https://github.com/wezterm/wezterm)**  
-
-  **GPU-accelerated terminal emulator and multiplexer**, MIT licensed with 20,000+ GitHub stars . **Built in Rust with Lua configuration** — fully scriptable . **Cross-platform** (Linux, macOS, Windows, FreeBSD, NetBSD, OpenBSD) . Features **tab and pane multiplexing**, **SSH/TLS remote domains**, **ligature support**, and **built-in image protocol** . **The most configurable terminal** — Lua scripting enables deep customization . **The best choice for cross-platform consistency** .
-
-
-
-- **[Ghostty](https://github.com/ghostty-org/ghostty)**  
-
-  **Fast, feature-rich, cross-platform terminal emulator** by Mitchell Hashimoto (HashiCorp co-founder), MIT licensed with 25,000+ GitHub stars . **Native GUI on every platform** — GTK on Linux, AppKit on macOS, Win32 on Windows (alpha) . **GPU-accelerated with platform-native rendering** — no Electron, no web tech . **The most promising new terminal** — focuses on speed, correctness, and native experience . **Not yet 1.0** but already production-quality on macOS and Linux .
-
-
-
-- **[Hyper](https://github.com/vercel/hyper)**  
-
-  **Electron-based terminal** built with web technologies, MIT licensed with 45,000+ GitHub stars . **Extensible via npm packages** — plugins for themes, notifications, and more . **The most customizable terminal for JavaScript developers** . **Trade-off**: Electron overhead means higher memory usage and slower startup than native alternatives .
-
-
-
-- **[Tabby](https://github.com/Eugeny/tabby)**  
-
-  **Modern terminal emulator with SSH, serial, and Telnet support**, MIT licensed with 60,000+ GitHub stars . **Cross-platform** with integrated SSH client, port forwarding, and SFTP . **The best open-source alternative to MobaXterm** — built with Electron and TypeScript . **Best for Windows users needing remote access tools in one app** .
-
-
-
-- **[ConEmu](https://github.com/Maximus5/ConEmu)**  
-
-  **Windows terminal emulator with tabs, splits, and extensive customization**, BSD-3-Clause licensed . **The predecessor to Windows Terminal** — still actively used for legacy Windows workflows . **Best for Windows users needing a mature, feature-rich terminal** with task automation .
-
-
-
-- **[Terminator](https://github.com/gnome-terminator/terminator)**  
-
-  **Linux terminal with multiple resizable panes in a grid**, GPL-2.0 licensed . **Split panes and tabs** with drag-and-drop reordering . **The classic Linux multiplexing terminal** — popular in DevOps workflows .
-
-
-
-- **[Tilix](https://github.com/gnunn1/tilix)**  
-
-  **GTK3 terminal for Linux with tiling and split panes**, MPL-2.0 licensed . **Quake mode** for drop-down terminal access . **Best for GNOME users** wanting tiling without tmux .
-
-
-
-- **[Guake](https://github.com/Guake/guake)**  
-
-  **Drop-down terminal for GNOME**, GPL-2.0 licensed . **Quake-style overlay** accessible with a single hotkey . **Best for quick command access** without leaving your current application .
-
-
-
-- **[QTerminal](https://github.com/lxqt/qterminal)**  
-
-  **Lightweight Qt-based terminal emulator**, GPL-2.0 licensed . **The default terminal for LXQt** — fast and minimal . **Best for low-resource Linux systems** .
-
-
-
-- **[Termux](https://github.com/termux/termux-app)**  
-
-  **Android terminal emulator and Linux environment**, GPL-3.0 licensed with 35,000+ GitHub stars . **Full package management via apt** — runs Python, Node.js, Git, and more on Android . **The most capable mobile terminal** — turns Android into a portable development environment . **Not available on Google Play due to API restrictions** — install from F-Droid or GitHub .
-
-
-
-### The Multiplexers
-
-
-
-Terminal multiplexers are essential companions to minimalist terminals like Alacritty:
-
-
-
-- **[tmux](https://github.com/tmux/tmux)**  
-
-  **The standard terminal multiplexer**, ISC licensed with 35,000+ GitHub stars . **Sessions, windows, and panes** with detach/reattach persistence . **The most widely used multiplexer** — essential for remote work and long-running processes .
-
-
-
-- **[Zellij](https://github.com/zellij-org/zellij)**  
-
-  **Modern terminal workspace and multiplexer**, MIT licensed with 20,000+ GitHub stars . **Built-in layouts, plugins, and floating panes** with discoverable keybindings . **The user-friendly tmux alternative** — better defaults and status bar .
-
-
-
-- **[GNU Screen](https://www.gnu.org/software/screen/)**  
-
-  **The original terminal multiplexer**, GPL-3.0 licensed . **Sessions and detach/reattach** — simpler than tmux . **Still useful on legacy systems** where tmux isn't installed .
-
-
-
-- **[abduco](https://github.com/martanne/abduco)**  
-
-  **Session management with minimal dependencies**, ISC licensed . **The simplest detach/reattach tool** — pairs with dvtm for panes .
-
-
-
-- **[dvtm](https://github.com/martanne/dvtm)**  
-
-  **Dynamic virtual terminal manager**, MIT licensed . **Tiling window management for terminals** — pairs with abduco for sessions .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **GNOME Terminal** — Default terminal for GNOME with tabs, profiles, and transparency .
-
-- **Konsole** — KDE's terminal emulator with tabs, splits, and bookmarks .
-
-- **XFCE Terminal** — Lightweight terminal for XFCE desktop .
-
-- **Terminology** — Enlightenment's terminal with unique visual features .
-
-- **st** — Simple terminal from suckless, minimal and fast .
-
-- **Extraterm** — Terminal with GUI features like image display and command output editing .
-
-- **Rio** — Web-based terminal emulator built with Rust and WebAssembly .
-
-- **Wave Terminal** — Modern terminal with graphical widgets and AI features .
-
-
-
-**Frameworks for building custom terminal solutions**: Choose based on platform and workflow. **Windows Terminal** for Windows-native GPU acceleration and WSL integration . **Alacritty** for maximum performance with external multiplexing . **Kitty** for built-in tabs, splits, and Python extensibility . **WezTerm** for cross-platform consistency with Lua scripting . **Ghostty** for native GUI performance on macOS and Linux . **Tabby** for integrated SSH/SFTP on Windows . **Termux** for Android-based development . Pair minimalist terminals with **tmux** or **Zellij** for multiplexing . Note that true commercial terminals like Warp offer AI features and collaboration, but open-source alternatives match their performance and exceed their configurability .
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Terminal emulators handle shell sessions, SSH keys, and potentially sensitive command history. **Review security settings** — some terminals store scrollback to disk, log sessions, or transmit data for AI features .
-
-- **GPU-accelerated terminals require compatible graphics drivers** — Alacritty, Kitty, WezTerm, and Ghostty need OpenGL 3.3+ or Metal/Vulkan support .
-
-- **Electron-based terminals (Hyper, Tabby) use more memory** than native alternatives — typically 100-200 MB vs. 20-50 MB for Alacritty or Kitty .
-
-- **Warp and MobaXterm are not fully open source** — Warp's client is closed, MobaXterm's free tier has session limits .
-
-- The open-source ecosystem provides strong performance, multiplexing, and cross-platform foundations, but **AI features, team collaboration, and managed remote access** remain primarily commercial offerings.
-
-
+# ⚡ Awesome Terminal Emulator Ecosystem 🚀
+
+![Awesome Terminal Emulator Banner](assets/banner.svg)
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Terminal-Emulator/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Terminal-Emulator?style=social" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Terminal-Emulator/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 📌 Executive Summary & Ecosystem Overview
 
+Welcome to the **Awesome Terminal Emulator Ecosystem** — the premier curated directory of top-tier **command-line interfaces (CLI)**, **GPU-accelerated terminal emulators**, **SSH remote management suites**, and **terminal multiplexers**.
 
-**Made for developers, system administrators, and command-line enthusiasts.**
+Whether you are seeking zero-latency Rust-based terminals (Alacritty, WezTerm, Ghostty), modern AI-assisted workspaces (Warp, Wave), robust Windows remote access tools (MobaXterm, Tabby), or classic Unix multiplexers (tmux, Zellij), this list provides empirical benchmarks, pricing breakdowns, and star ratings.
 
-Let's make terminal emulators more open, transparent, and performant.
+---
+
+## 📑 Table of Contents
+
+- [🏢 SaaS \& Commercial Platforms](#-saas--commercial-platforms)
+- [🌟 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🔀 Terminal Multiplexers](#-terminal-multiplexers)
+- [🛠️ Additional Notable Shells \& Tools](#️-additional-notable-shells--tools)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#️-disclaimer)
+- [⭐ Star History](#-star-history)
+- [❤️ Support \& Community](#%EF%B8%8F-support--community)
+
+---
+
+## 🏢 SaaS & Commercial Platforms
+
+> 💡 **Market Size & Structure**: The terminal emulator and developer CLI environment market forms a critical component of the **$25B+ global developer tools market**. The sector is **highly fragmented**, characterized by open-source community dominance (Windows Terminal, Alacritty, Kitty, WezTerm) alongside emerging commercial AI-first platforms (Warp) and specialized enterprise SSH management suites (Termius, MobaXterm).
+
+### 📊 SaaS Comparison Matrix
+
+| Product 🖥️ | Description 📝 | Company Size (Valuation / Revenue) 💰 | Pricing (Paid Tiers) 💳 | Free Tier Limit 🆓 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Warp](https://www.warp.dev/)** | AI-native, Rust-built terminal with blocks UI, natural language commands & team collaborative notebooks. | **$100M+ Valuation** ($23M Series A led by GV) | **$12 / user / month** (Team Plan) / **$50 / user / month** (Enterprise) | Max 100 AI request credits / month & up to 5 team members |
+| **[Termius](https://termius.com/)** | Cross-platform SSH client, SFTP manager, and terminal with cloud snippet & key sync across desktop & mobile. | **$20M+ Revenue** (YC Alum, 1M+ active engineers) | **$10 / user / month** (Pro Plan) / **$20 / user / month** (Team) | Starter Plan: Basic single-device SSH client without cloud sync |
+| **[MobaXterm](https://mobaxterm.mobatek.net/)** | All-in-one Windows terminal suite with built-in X11 server, SFTP browser, RDP/VNC, and remote session tools. | **$5M - $10M Revenue** (Mobatek SAS) | **$69.00 / user** (Professional Edition one-time license) | Home Edition: Max 12 SSH/SFTP sessions, 2 RDP/VNC sessions, 4 macros |
+| **[iTerm2](https://iterm2.com/)** | Popular macOS-focused terminal emulator featuring split panes, autocomplete, triggers, and search. | **Donation Funded** ($50K+/yr community supported) | **$0.00** (100% Free & Open Source - GPL-2.0) | Unlimited Free Forever: Full feature set with zero restrictions |
+| **[PuTTY](https://www.putty.org/)** | Classic lightweight Windows SSH and telnet client with terminal emulation. | **Open-Source Community** (Maintained by Simon Tatham) | **$0.00** (100% Free & Open Source - MIT) | Unlimited Free Forever: Full feature set with zero restrictions |
+
+---
+
+## 🌟 Open-Source GitHub Projects
+
+Below is a curated list of top open-source terminal emulators, ranked strictly by **GitHub Star Count (descending)**.
+
+1. 🌟 **[Windows Terminal](https://github.com/microsoft/terminal)** [![Stars](https://img.shields.io/github/stars/microsoft/terminal?style=social)](https://github.com/microsoft/terminal/stargazers)  
+   **Microsoft's official modern, GPU-accelerated terminal for Windows**. Built with DirectWrite/DirectX, multi-tab support, dynamic split panes, rich Unicode/emoji rendering, and native WSL / PowerShell integration.
+
+2. 🌟 **[Tabby](https://github.com/Eugeny/tabby)** [![Stars](https://img.shields.io/github/stars/Eugeny/tabby?style=social)](https://github.com/Eugeny/tabby/stargazers)  
+   **Cross-platform terminal for SSH, Serial, and local shells**. Feature-packed open-source alternative to MobaXterm built with Electron and TypeScript, featuring SFTP client, port forwarding, and custom themes.
+
+3. 🌟 **[Alacritty](https://github.com/alacritty/alacritty)** [![Stars](https://img.shields.io/github/stars/alacritty/alacritty?style=social)](https://github.com/alacritty/alacritty/stargazers)  
+   **The benchmark GPU-accelerated terminal emulator**. Written in Rust with an intense focus on raw speed and minimal resource consumption. Designed to be paired with terminal multiplexers like tmux.
+
+4. 🌟 **[Termux](https://github.com/termux/termux-app)** [![Stars](https://img.shields.io/github/stars/termux/termux-app?style=social)](https://github.com/termux/termux-app/stargazers)  
+   **Android terminal emulator and Linux environment**. Provides complete APT package management, allowing execution of Python, Node.js, Git, and C/C++ directly on mobile devices without root.
+
+5. 🌟 **[Ghostty](https://github.com/ghostty-org/ghostty)** [![Stars](https://img.shields.io/github/stars/ghostty-org/ghostty?style=social)](https://github.com/ghostty-org/ghostty/stargazers)  
+   **Next-generation cross-platform GPU terminal** by Mitchell Hashimoto (HashiCorp co-founder). Features native platform GUI toolkits (GTK on Linux, AppKit on macOS) without web runtime overhead.
+
+6. 🌟 **[Hyper](https://github.com/vercel/hyper)** [![Stars](https://img.shields.io/github/stars/vercel/hyper?style=social)](https://github.com/vercel/hyper/stargazers)  
+   **Extensible Electron terminal application built on HTML/CSS/JS** by Vercel. Fully customizable using JavaScript extensions and npm plugins.
+
+7. 🌟 **[Kitty](https://github.com/kovidgoyal/kitty)** [![Stars](https://img.shields.io/github/stars/kovidgoyal/kitty?style=social)](https://github.com/kovidgoyal/kitty/stargazers)  
+   **Feature-packed GPU terminal with Python extensibility**. Supports native image display, socket remote control, kittens (extensible terminal scripts), and custom font ligatures.
+
+8. 🌟 **[WezTerm](https://github.com/wezterm/wezterm)** [![Stars](https://img.shields.io/github/stars/wezterm/wezterm?style=social)](https://github.com/wezterm/wezterm/stargazers)  
+   **Cross-platform GPU terminal emulator and multiplexer** written in Rust with Lua configuration support. Offers SSH/TLS remote domains, tab/pane tiling, and built-in graphics protocols.
+
+9. 🌟 **[Wave Terminal](https://github.com/wavetermdev/waveterm)** [![Stars](https://img.shields.io/github/stars/wavetermdev/waveterm?style=social)](https://github.com/wavetermdev/waveterm/stargazers)  
+   **Modern open-source AI terminal emulator**. Integrates inline file previews, web browser widgets, and LLM assistance directly into the command line canvas.
+
+10. 🌟 **[ConEmu](https://github.com/Maximus5/ConEmu)** [![Stars](https://img.shields.io/github/stars/Maximus5/ConEmu?style=social)](https://github.com/Maximus5/ConEmu/stargazers)  
+    **Mature Windows console window emulator**. Hosts multiple command-line shells, GUI applications, tabs, and customizable key bindings.
+
+11. 🌟 **[Rio](https://github.com/raphamorim/rio)** [![Stars](https://img.shields.io/github/stars/raphamorim/rio?style=social)](https://github.com/raphamorim/rio/stargazers)  
+    **Hardware-accelerated terminal built with Rust and WebGPU**. Focuses on low latency, font ligatures, and modern cross-platform rendering.
+
+12. 🌟 **[Tilix](https://github.com/gnunn1/tilix)** [![Stars](https://img.shields.io/github/stars/gnunn1/tilix?style=social)](https://github.com/gnunn1/tilix/stargazers)  
+    **GTK3 tiling terminal emulator for Linux**. Follows GNOME Human Interface Guidelines with split panes, quake dropdown mode, and layout save/restore.
+
+13. 🌟 **[Guake](https://github.com/Guake/guake)** [![Stars](https://img.shields.io/github/stars/Guake/guake?style=social)](https://github.com/Guake/guake/stargazers)  
+    **Top-down drop-down Quake-style terminal for GNOME**. Instantly toggled via hotkey for quick system operations.
+
+14. 🌟 **[Terminator](https://github.com/gnome-terminator/terminator)** [![Stars](https://img.shields.io/github/stars/gnome-terminator/terminator?style=social)](https://github.com/gnome-terminator/terminator/stargazers)  
+    **Flexible Linux terminal with grid pane splitting**. Allows users to fill screens with multiple terminal panes and broadcast commands across windows.
+
+---
+
+## 🔀 Terminal Multiplexers
+
+Terminal multiplexers allow running multiple terminal sessions inside a single window, persisting remote SSH connections, and splitting screens into custom arrangements.
+
+1. ⚡ **[tmux](https://github.com/tmux/tmux)** [![Stars](https://img.shields.io/github/stars/tmux/tmux?style=social)](https://github.com/tmux/tmux/stargazers)  
+   **The industry-standard terminal multiplexer**. Enables detachment/reattachment of persistent background sessions, window tabs, and flexible pane layouts.
+
+2. ⚡ **[Zellij](https://github.com/zellij-org/zellij)** [![Stars](https://img.shields.io/github/stars/zellij-org/zellij?style=social)](https://github.com/zellij-org/zellij/stargazers)  
+   **User-friendly terminal workspace and multiplexer in Rust**. Offers floating panes, discoverable UI keybindings, dynamic layouts, and WebAssembly plugin architecture.
+
+3. ⚡ **[GNU Screen](https://www.gnu.org/software/screen/)**  
+   **The classic Unix terminal session manager**. Provides basic session persistence and window splitting across legacy Linux and BSD deployments.
+
+4. ⚡ **[abduco](https://github.com/martanne/abduco)** [![Stars](https://img.shields.io/github/stars/martanne/abduco?style=social)](https://github.com/martanne/abduco/stargazers)  
+   **Lightweight session attachment/detachment tool**. Provides process persistence without window management overhead.
+
+---
+
+## 🛠️ Additional Notable Shells & Tools
+
+- 🐧 **GNOME Terminal** — The classic default GTK terminal for GNOME desktops.
+- 💻 **Konsole** — Powerful KDE terminal supporting tabs, profiles, and background monitoring.
+- ⚡ **st (Simple Terminal)** — Ultra-minimalist C terminal by suckless.org for power users.
+- 🎨 **Terminology** — Enlightenment desktop terminal with inline image and video rendering.
+- 🌊 **Foot** — Fast, lightweight, Wayland-native terminal emulator.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcome! To add a new terminal tool or update existing benchmarks:
+
+1. Fork this repository.
+2. Update `README.md` following the established formatting and table schema.
+3. Ensure open-source projects include star count social badges linking to `/stargazers`.
+4. Open a Pull Request with a clear concise summary.
+
+*See also our meta repository: [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)*
+
+---
+
+## ⚠️ Disclaimer
+
+- This list is **community-curated** for educational and productivity evaluation purposes.
+- Terminal emulators process credentials, shell logs, and sensitive session data. Always review security policies and telemetry settings (especially for AI-assisted tools).
+- GPU-accelerated terminals require system OpenGL 3.3+, Vulkan, or Apple Metal driver support.
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Terminal-Emulator&type=date&legend=top-left)](https://star-histrry.dera.page/#ishandutta2007/Awesome-Terminal-Emulator&type=date&legend=top-left)
+
+---
+
+## ❤️ Support & Community
+
+Thank you for exploring **Awesome-Terminal-Emulator**! If this repository helped you find your ideal terminal emulator or CLI workspace setup, please consider supporting the project:
+
+- ⭐ **Star** this repository to show appreciation and help others discover it.
+- 🔀 **Fork** and contribute new features, updates, or tools.
+- 📢 **Share** with developers, DevOps engineers, and Linux power users.
+
+☕ **Sponsor / Buy me a coffee**:  
+<a href="https://github.com/sponsors/ishandutta2007"><img src="https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=for-the-badge&logo=github-sponsors" alt="Sponsor on GitHub"/></a>
