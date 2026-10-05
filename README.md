@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Terminal-Emulator/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Terminal-Emulator?style=social" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Terminal-Emulator/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Terminal-Emulator?style=social" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Terminal-Emulator/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -50,7 +50,7 @@ Whether you are seeking zero-latency Rust-based terminals (Alacritty, WezTerm, G
 
 ## 🌟 Open-Source GitHub Projects
 
-Below is a curated list of top open-source terminal emulators, ranked strictly by **GitHub Star Count (descending)**.
+Below is a curated list of top open-source terminal emulators, ranked strictly by **GitHub Stars_Count (descending)**.
 
 1. 🌟 **[Windows Terminal](https://github.com/microsoft/terminal)** [![Stars](https://img.shields.io/github/stars/microsoft/terminal?style=social)](https://github.com/microsoft/terminal/stargazers)  
    **Microsoft's official modern, GPU-accelerated terminal for Windows**. Built with DirectWrite/DirectX, multi-tab support, dynamic split panes, rich Unicode/emoji rendering, and native WSL / PowerShell integration.
@@ -130,7 +130,7 @@ Contributions are warmly welcome! To add a new terminal tool or update existing 
 
 1. Fork this repository.
 2. Update `README.md` following the established formatting and table schema.
-3. Ensure open-source projects include star count social badges linking to `/stargazers`.
+3. Ensure open-source projects include Stars_Count social badges linking to `/stargazers`.
 4. Open a Pull Request with a clear concise summary.
 
 *See also our meta repository: [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)*
@@ -161,3 +161,12 @@ Thank you for exploring **Awesome-Terminal-Emulator**! If this repository helped
 
 ☕ **Sponsor / Buy me a coffee**:  
 <a href="https://github.com/sponsors/ishandutta2007"><img src="https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?style=for-the-badge&logo=github-sponsors" alt="Sponsor on GitHub"/></a>
+
+## Star History
+
+<a href="https://star-history.com/#ishandutta2007/Awesome-Terminal-Emulator&Timeline" align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ishandutta2007_Awesome-Terminal-Emulator_growth.svg">
+    <img alt="Star History Chart" src="assets/ishandutta2007_Awesome-Terminal-Emulator_growth.svg">
+  </picture>
+</a>
